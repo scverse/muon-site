@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>muon</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="content_cover">
+        <div id="cover">
+          <div id="cover_content">
+            <!-- <img id="header" style="max-height: 500px;" src="header.svg"/> -->
+            <!-- <svg id="header_svg" width="1000px">
+                <g transform="matrix(1,0,0,1,-90,-1582)">
+                    <g transform="matrix(1,0,0,1,128.18,-192.552)">
+                        <g id="header-img-only" serif:id="header img only">
+                        </g>
+                    </g>
+                    <g transform="matrix(1,0,0,1,-105.735,282.471)">
+                        <g id="header-with-text" serif:id="header with text">
+                        </g>
+                    </g>
+                    <g id="header-with-text-and-grid" serif:id="header with text and grid" transform="matrix(1,0,0,1,12.2121,516.299)">
+                        <g id="isometric-grid" serif:id="isometric grid" transform="matrix(1,0,0,1,-41.8201,-517.7)">
+                            <g transform="matrix(1,-0,-0,1,119.608,1583.4)">
+                                <use xlink:href="#_Image1" x="246" y="0" width="279px" height="65.637px" transform="matrix(1,0,0,0.994497,0,0)"/>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="header-text-grid-no-bg" serif:id="header text grid no bg" transform="matrix(1,0,0,1,12.2121,1019.45)">
+                        <g id="isometric-grid1" serif:id="isometric grid" transform="matrix(1,0,0,1,-20.096,-516.547)">
+                            <g transform="matrix(1,-0,-0,1,97.8839,1079.1)">
+                                <use xlink:href="#_Image2" x="58" y="41" width="581px" height="309px"/>
+                            </g>
+                        </g>
+                        <g transform="matrix(1,-0,-0,1,77.7879,562.554)">
+                            <use xlink:href="#_Image3" x="671.71" y="140.505" width="177.781px" height="38.111px" transform="matrix(0.998769,0,0,0.977206,0,0)"/>
+                        </g>
+                        <g transform="matrix(0.490252,0,0,0.490252,497.108,426.443)">
+                            <text x="508.837px" y="716.51px" style="font-family:'Rubik-Regular', 'Rubik';font-size:57.25px;fill:rgb(119,119,119);">multimodal omics</text>
+                            <text x="508.837px" y="773.76px" style="font-family:'Rubik-Regular', 'Rubik';font-size:57.25px;fill:rgb(119,119,119);">Python <tspan x="714.25px 736.12px 757.188px " y="773.76px 773.76px 773.76px ">fra</tspan>me<tspan x="870.715px 915.713px " y="773.76px 773.76px ">wo</tspan>rk</text>
+                        </g>
+                        <g transform="matrix(1,0,0,1,-125.829,-1.93926)">
+                            <g>
+                                <g transform="matrix(1,0,0,1,42.337,285.635)">
+                                    <g opacity="0.75">
+                                        <g transform="matrix(1,0,0,1,128.12,63.8235)">
+                                            <path d="M383.953,448.317L447.927,416.219L512.036,448.255L448.077,480.12" style="fill:rgb(176,176,176);"/>
+                                        </g>
+                                        <g transform="matrix(1,0,0,1,-0.216303,-0.344785)">
+                                            <path d="M383.953,448.317L447.927,416.219L512.036,448.255L448.077,480.12" style="fill:rgb(176,176,176);"/>
+                                        </g>
+                                        <g transform="matrix(1,0,0,1,-0.0735377,63.8305)">
+                                            <path d="M383.953,448.317L447.927,416.219L512.036,448.255L448.077,480.12" style="fill:rgb(176,176,176);"/>
+                                        </g>
+                                        <g transform="matrix(1,0,0,1,127.978,-0.351739)">
+                                            <path d="M383.953,448.317L447.927,416.219L512.036,448.255L448.077,480.12" style="fill:rgb(176,176,176);"/>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g transform="matrix(1,-0,-0,1,203.617,564.493)">
+                                    <use xlink:href="#_Image4" x="349.929" y="61.348" width="26.053px" height="26.053px" transform="matrix(0.964929,0,0,0.964929,0,0)"/>
+                                </g>
+                            </g>
+                            <g transform="matrix(1,-0,-0,1,203.617,564.493)">
+                                <use xlink:href="#_Image5" x="359.946" y="196.797" width="18.028px" height="15.723px" transform="matrix(0.948825,0,0,0.982699,0,0)"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </svg> -->
+            <div id="summary_left_right">
+              <div id="summary_left">
+                <svg id="header_svg" width="100px" height="200px">
+                </svg>
+              </div>
+              <div id="summary_right">
+                <div id="summary_title">
+                  <h1>muon</h1>
+                </div>
+                <div id="summary_subtitle">
+                  <h2>multimodal omics<br>Python framework</h2>
+                </div>
+              </div>
+            </div>
+            <!-- <div id="summary_text">
+              <h1>muon</h1>
+              <h2>multimodal omics<br>Python framework</h2>
+            </div> -->
+            <div class="action_buttons"> 
+              <a href="#install" class="action_button"><span class="action_link">pip install muon</span></a>
+              <a href="https://muon.readthedocs.io/en/latest/index.html" target="_blank" class="git"><span class="git_link">docs</span></a>
+              <a href="https://muon-tutorials.readthedocs.io/en/latest/index.html" target="_blank" class="git"><span class="git_link">tutorials</span></a>
+              <a href="https://github.com/scverse/muon" target="_blank" class="git"><span class="git_link">github</span></a>
+              <!-- <a href="#start" class="action_button"><span class="action_link">learn more</span></a> -->
+              <!--, <a href="https://biorxiv.org" target="_blank" class="ppr">Paper</a>, -->
+              <!--<a href="https://twitter.com/gtcaa/" target="_blank" class="twt">Twitter thread</a>-->
+            </div>
+          </div>
+        </div>
+        <div id="content">
+          <div class="content_page">
+            <div id="start">
+              <p><span class="muon">muon</span> is a Python framework designed to work with multimodal omics data. Incentified by recent advances in acquisition of multimodal data from individual cells, <span class="muon">muon</span> aims to provide convenience and speed to its users enabling standardised analysis while staying flexible and expandable. <span class="muon">muon</span> stands on the shoulders of and integrates with <a href="https://github.com/theislab/anndata" target="_blank">annotated&nbsp;data</a> object specification and <a href="https://github.com/theislab/scanpy" target="_blank">scanpy</a> library for single-cell analysis in Python.</p>
+            </div>
+          </div>
+
+
+          <div id="showcase">
+            <div class="showcase_element">
+              <a href="https://github.com/scverse/muon-tutorials/tree/master/single-cell-rna-atac/pbmc10k" target="_blank"><span class="clickable"></span></a>
+              <h4>Application highlight</h4>Analysis of single&#8209;cell <span class="highlight">RNA&nbsp;&&nbsp;ATAC</span> data from peripheral blood mononuclear cells</div>
+            <div class="showcase_element showcase_element">
+              <!-- <a href="https://www.nature.com/articles/nmeth.4380" target="_blank"><span class="clickable"></span></a> 
+              <h4>Potential application</h4>Analysis of single&#8209;cell <span class="highlight">RNA&nbsp;&&nbsp;surface protein</span> measurements from cord blood mononuclear cells -->
+              <a href="https://github.com/scverse/muon-tutorials/tree/master/cite-seq/" target="_blank"><span class="clickable"></span></a>
+              <h4>Application highlight</h4>Analysis of single&#8209;cell <span class="highlight">RNA&nbsp;&&nbsp;surface protein</span> measurements from peripheral blood mononuclear cells
+            </div>
+	    <div class="showcase_element showcase_element_tbd">
+              <a href="https://elifesciences.org/articles/63632" target="_blank"><span class="clickable"></span></a>
+              <h4>Potential application</h4>Analysis of trimodal single&#8209;cell data – <span class="highlight">RNA, ATAC, epitopes</span> – from peripheral blood mononuclear cells
+            </div>
+            <div class="showcase_element showcase_element_tbd">
+              <a href="https://www.nature.com/articles/s41467-018-03149-4" target="_blank"><span class="clickable"></span></a>
+              <h4>Potential application</h4>Analysis of single&#8209;cell <span class="highlight">scNMT-seq</span> data
+            </div>
+            <div class="showcase_element showcase_element_tbd">
+              <a href="https://www.cell.com/cell/pdf/S0092-8674(20)30809-6.pdf" target="_blank"><span class="clickable"></span></a>
+              <h4>Potential application</h4>Analysis of single&#8209;cell <span class="highlight">RNA&nbsp;&&nbsp;intracellular protein activity</span> from peripheral blood mononuclear cells
+            </div>
+            <div class="showcase_element showcase_element_tbd">
+              <a href="https://science.sciencemag.org/content/367/6476/eaay1645" target="_blank"><span class="clickable"></span></a>
+              <h4>Potential application</h4>Analysis of <span class="highlight">RNA&nbsp;&&nbsp;ATAC</span> data from human stem cell&#8209;derived 3D forebrain organoids
+            </div>
+          </div>
+
+          <div class="content_page">
+            <div id="concept">
+              <img id="cell_render" src="cell_render.png"/>
+              <!-- <img id="cube_render" src="cube_render.png"/> -->
+            </div>
+          </div>
+
+          <div class="content_page">
+            <h1>get to know muon</h1>
+            <h2 class="h2_first">multimodal data containers</h2>
+            <div class="content_block">
+              <div class="content_img" id="img_mudata">
+                <img src="img/mudata.png"/>
+              </div>
+              <div class="content_text">
+                <div>
+                  <p><span class="muon">muon</span> introduces <b>multimodal data containers</b> allowing Python users to work with increasigly complex datasets efficiently and to build new workflows and computational tools around it</p>
+                </div>
+                <code>
+                  <span class="code_header">~> python<br></span>
+                  mdata<br>
+                  | MuData object with n_obs &times; n_vars = 10110 &times; 110101<br>
+                  | &emsp;2 modalities<br>
+                  | &emsp;&emsp;atac: 10110 x 100001<br>
+                  | &emsp;&emsp;rna:  10110 x 10100<br>
+                </code>
+                <div class="content_text_br"></div>
+              </div>
+            </div>
+
+            <div class="content_block">
+              <div class="content_img" id="img_multimodal">
+                <img src="img/multimodal.png"/>
+              </div>
+              <div class="content_text">
+                <h2>multi-omics methods</h2>
+                <div>
+                  <p><span class="muon">muon</span> brings <b>multi-omics methods</b> availability to a whole new level: state-of-the-art methods for multi-omics data integration are just a function call away</p>
+                </div>
+                <code>
+                  <span class="code_header"># multi-omics factor analysis<br></span>
+                  mu.tl.mofa(mdata)
+                </code>
+                <code>
+                  <span class="code_header"># weighted nearest neighbours<br></span>
+                  mu.pp.neighbors(mdata)
+                </code>
+                <div class="content_text_br"></div>
+              </div>
+            </div>
+
+            <div class="content_block">
+              <div class="content_img" id="img_unimodal">
+                <img src="img/unimodal.png"/>
+              </div>
+              <div class="content_text">
+                <h2>methods crafted for omics</h2>
+                <div>
+                  <p><span class="muon">muon</span> features methods for specific <b>omics</b> such as ATAC-seq and CITE-seq making it an extendable solution and allowing for prospective growth in an open-source environment</p>
+                </div>
+                <code>
+                  <span class="code_header"># TF-IDF transformation<br></span>
+                  ac.pp.tfidf(mdata.mod['atac'])
+                </code>
+                <code>
+                  <span class="code_header"># denoising and scaling by background<br></span>
+                  pt.pp.dsb(mdata.mod['prot'])
+                </code>
+                <div class="content_text_br"></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="install" class="content_page">
+            <h1>Get muon</h1>
+            <code>
+              <span class="code_header">&#10095; </span>
+              pip install muon
+              <span class="code_header"><br>&nbsp;&nbsp;# or<br></span>
+              <span class="code_header">&#10095; </span>
+              pip install git+https://github.com/scverse/muon
+            </code>
+            <br/><br/><br/><br/>
+
+            <h1>Get started</h1>
+            <code>
+              <span class="code_header">~> python<br></span>
+              import muon as mu
+            </code>
+            <div>
+              <p><a href="https://muon.readthedocs.io/en/latest/io/input.html" target="_blank">Load data easily</a> whether you start from raw count matrices, Loom files or AnnData objects. Or Snap files. Or Seurat objects. Or MultiAssayExperiment objects. And make multimodal containers with it.</p>
+            </div>
+            <code>
+              <span class="code_header">~> python<br></span>
+              mdata = MuData({<br>
+              &nbsp;&nbsp;'rna': adata_rna,<br>
+              &nbsp;&nbsp;'prot': adata_prot<br>
+              })
+            </code>
+            <div>
+              <p>Generate <a href="https://muon.readthedocs.io/en/latest/omics/multi.html#multi-omics-factor-analysis" target="_blank">an interpretable latent space</a> leveraging information from multiple modalities. Or <a href="https://muon.readthedocs.io/en/latest/omics/multi.html#multiplex-clustering" target="_blank">cluster</a> your data based on multiple layers of information. Or construct <a href="https://muon.readthedocs.io/en/latest/omics/multi.html#weighted-nearest-neighbours" target="_blank">a neighbourhood graph</a> on multiple modalities.</p>
+            </div>
+            <code>
+              <span class="code_header">~> python<br></span>
+              mu.tl.mofa(mdata)
+            </code>
+            <div>
+              <p>Visualize results in and across modalities.</p>
+            </div>
+            <code>
+              <span class="code_header">~> python<br></span>
+              mu.pl.mofa(mdata, color='CD45RA')<br>
+              mu.pl.umap(mdata, color='celltype')
+            </code>
+            <div class="content_page_br"></div>
+          </div>
+
+          <div id="engage" class="content_page">
+            <!-- <h1>Engage with the community</h1> -->
+            <h1>get involved</h1>
+            <div>
+              <p>From biomedical observations to novel single-cell assays. From chromatin accessibility to spatial transcriptomics. Applications of multimodal data are far-reaching, and it's a community effort.</p>
+            </div>
+          </div>
+
+          <div class="content_page_wide">
+            <div id="green_canvas">
+              <div id="canvas_wrapper">
+                <div class="canvas_column">
+                  <div>
+                    <span>codebase</span>
+                    <ul>
+                      <li><a href="https://github.com/scverse/muon" target="_blank">source code</a></li>
+                      <li><a href="https://github.com/scverse/muon-tutorials" target="_blank">tutorials</a></li>
+		      <li><a href="https://github.com/scverse/mudata" target="_blank">mudata</a></li>
+		      <li><a href="https://github.com/pmbio/mudatasets" target="_blank">mudatasets</a></li>
+                      <li><a href="https://github.com/scverse/Muon.jl" target="_blank">Muon.jl</a></li>
+                      <li><a href="https://github.com/pmbio/MuDataSeurat" target="_blank">MuDataSeurat</a></li>
+                      <li><a href="https://github.com/pmbio/MuDataMAE" target="_blank">MuData (bioconductor)</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <span>documentation</span>
+                    <ul>
+                      <li><a href="https://muon.readthedocs.io/en/latest/index.html" target="_blank">muon documentation</a></li>
+                      <li><a href="https://muon-tutorials.readthedocs.io/en/latest/index.html" target="_blank">muon tutorials</a></li>
+                      <li><a href="https://mudata.readthedocs.io/en/latest/index.html" target="_blank">mudata documentation</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="canvas_column">
+                  <div>
+                    <span>publications</span>
+                    <ul>
+
+                      <li><a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02577-8" target="_blank">muon paper</a></li>
+                      <li><a href="https://www.nature.com/articles/s41592-021-01343-9" target="_blank">MEFISTO paper</a></li>
+                      <li><a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02015-1" target="_blank">MOFA+ paper</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="canvas_column">
+                  <div>
+                    <span>communication</span>
+                    <ul>
+                      <li><a href="https://discord.gg/MMsgDhnSwQ" target="_blank">Discord muon server</a></li>
+		      <li><a href="https://github.com/scverse/muon/discussions" target="_blank">GitHub discussions</a> & <a href="https://github.com/scverse/muon/issues" target="_blank">tracker</a></li>
+                      <li><a href="https://join.slack.com/t/mofahelp/shared_invite/enQtMjcxNzM3OTE3NjcxLWNhZmM1MDRlMTZjZWRmYWJjMGFmMDkzNDBmMDhjYmJmMzdlYzU4Y2EzYTI1OGExNzM2MmUwMzJkZmVjNDkxNGI" target="_blank">Slack MOFA workspace</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <span>main contributors</span>
+                    <ul>
+                      <li><a href="https://github.com/gtca" target="_blank">Danila Bredikhin</a></li>
+                      <li><a href="https://github.com/ilia-kats" target="_blank">Ilia Kats</a></li>
+                      <li><a href="https://github.com/mffrank" target="_blank">Max Frank</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div id="footer_content">
+        <div>
+          <p>Consider citing<br/><a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02577-8">Bredikhin et al., 2022. MUON: multimodal omics analysis framework.</a></p>
+        </div>
+        <div>
+          <p>Page content and design by Danila Bredikhin.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      svg = d3.select("#header_svg");
+
+      // Define the gradient
+      var gradient = svg.append("svg:defs")
+          .append("svg:linearGradient")
+          .attr("id", "gradient")
+          .attr("x1", "20%")
+          .attr("y1", "0%")
+          .attr("x2", "80%")
+          .attr("y2", "100%")
+          .attr("spreadMethod", "pad");
+
+      // Define the gradient colors
+      gradient.append("svg:stop")
+          .attr("offset", "0%")
+          .attr("stop-color", "#0BFF27")
+          .attr("stop-opacity", 0.9);
+
+      gradient.append("svg:stop")
+          .attr("offset", "75%")
+          .attr("stop-color", "#01FE9E")
+          .attr("stop-opacity", 1);
+
+      gradient.append("svg:stop")
+          .attr("offset", "100%")
+          .attr("stop-color", "#00CD80")
+          .attr("stop-opacity", 1);
+
+      var defs = svg.append("defs");
+      var filter = defs.append("filter")
+                         .attr("id", "blur")
+                         .attr("y", "-50%")
+                         .attr("height", "200%")
+                       .append("feGaussianBlur")
+                         .attr("stdDeviation", 1.5);
+
+      var circle = svg.append("circle")
+                      .attr("cx", 50)
+                      .attr("cy", 30)
+                      .attr("r", 15)
+                      .attr('fill', 'url(#gradient)');
+
+      var shadow = svg.append("ellipse")
+                      .attr("cx", 50)
+                      .attr("cy", 180)
+                      .attr("rx", 10)
+                      .attr("ry", 5)
+                      .style("opacity", .2)
+                      .style("filter", "url(#blur)");
+    
+
+      function repeat() {
+        shadow
+          .transition()
+            .duration(2500)
+            .attr("rx", 8)
+            .attr("ry", 3)
+          .transition()
+            .duration(4000)
+            .attr("rx", 10)
+            .attr("ry", 5);
+
+        circle
+          .transition()        
+            .duration(2500)      
+            .attr("cy", 50)  
+          .transition()   
+            .duration(4000)
+            .attr("cy", 30)
+          .on("end", repeat);
+      };
+
+      repeat();
+    </script>
+
+    <script>
+      (function() {
+  // Init
+  var container = document.getElementById("concept"),
+    inner = document.getElementById("cell_render");
+    
+      // Mouse
+      var mouse = {
+        _x: 0,
+        _y: 0,
+        x: 0,
+        y: 0,
+        updatePosition: function(event) {
+          var e = event || window.event;
+          this.x = e.clientX - this._x;
+          this.y = (e.clientY - this._y) * ((e.clientY - this._y) < 0 ? -1 : 1);
+        },
+        setOrigin: function(e) {
+          this._x = e.offsetLeft + Math.floor(e.offsetWidth / 2);
+          this._y = 0 + Math.floor(e.offsetHeight / 2);
+        },
+        show: function() {
+          return "(" + this.x + ", " + this.y + ")";
+        }
+      };
+
+      // Track the mouse position relative to the center of the container.
+      mouse.setOrigin(container);
+
+      //----------------------------------------------------
+
+      var counter = 0;
+      var refreshRate = 10;
+      var isTimeToUpdate = function() {
+        return counter++ % refreshRate === 0;
+      };
+
+      //----------------------------------------------------
+
+      var onMouseEnterHandler = function(event) {
+        update(event);
+      };
+
+      var onMouseLeaveHandler = function() {
+        inner.style = "";
+      };
+
+      var onMouseMoveHandler = function(event) {
+        if (isTimeToUpdate()) {
+          update(event);
+        }
+      };
+
+      //----------------------------------------------------
+
+      var update = function(event) {
+        mouse.updatePosition(event);
+        updateTransformStyle(
+          (mouse.y / inner.offsetHeight / 2).toFixed(2),
+          (mouse.x / inner.offsetWidth / 2).toFixed(2)
+        );
+      };
+
+      var updateTransformStyle = function(x, y) {
+        var style = "rotateX(" + x + "deg) rotateY(" + y + "deg)";
+        inner.style.transform = style;
+        inner.style.webkitTransform = style;
+        inner.style.mozTranform = style;
+        inner.style.msTransform = style;
+        inner.style.oTransform = style;
+      };
+
+      //--------------------------------------------------------
+
+      container.onmousemove = onMouseMoveHandler;
+      container.onmouseleave = onMouseLeaveHandler;
+      container.onmouseenter = onMouseEnterHandler;
+    })();
+    </script>
+  </body>
+</html>
+
+

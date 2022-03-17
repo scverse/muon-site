@@ -1,0 +1,519 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+html, body {
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: sans-serif;
+  color: #000000DD;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth;
+}
+html ::selection, body ::selection {
+  background: #00AF6688;
+}
+html ::-moz-selection, body ::-moz-selection {
+  background: #00AF6688;
+}
+html .muon, body .muon {
+  background-color: #00AF6633;
+  border-radius: 5px;
+  padding: 3px;
+  color: #333333;
+}
+html .muon:hover, body .muon:hover {
+  background-color: #00AF6655;
+}
+html #wrapper, body #wrapper {
+  width: 100%;
+  min-height: 100%;
+}
+html #wrapper #content_cover, body #wrapper #content_cover {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+}
+html #wrapper #content_cover #cover, body #wrapper #content_cover #cover {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  box-shadow: inset 0 40px 40px -30px #00AF6688;
+}
+html #wrapper #content_cover #cover #cover_content, body #wrapper #content_cover #cover #cover_content {
+  width: 50%;
+  height: 50%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-left: -50px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media only screen and (max-width: 1300px) {
+  html #wrapper #content_cover #cover #cover_content, body #wrapper #content_cover #cover #cover_content {
+    height: 50%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  html #wrapper #content_cover #cover #cover_content, body #wrapper #content_cover #cover #cover_content {
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  html #wrapper #content_cover #cover #cover_content, body #wrapper #content_cover #cover #cover_content {
+    margin: 10px;
+    padding-right: 50px;
+  }
+}
+html #wrapper #content_cover #cover #cover_content div, body #wrapper #content_cover #cover #cover_content div {
+  padding: 20px 0;
+  margin: 0;
+}
+html #wrapper #content_cover #cover #cover_content #summary_left_right, body #wrapper #content_cover #cover #cover_content #summary_left_right {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+html #wrapper #content_cover #cover #cover_content #summary_left_right #summary_left, body #wrapper #content_cover #cover #cover_content #summary_left_right #summary_left {
+  display: flex;
+  padding: 0;
+  align-self: center;
+  justify-content: center;
+  width: auto;
+}
+html #wrapper #content_cover #cover #cover_content #summary_left_right #summary_right, body #wrapper #content_cover #cover #cover_content #summary_left_right #summary_right {
+  padding: 0 10%;
+  width: auto;
+  align-self: center;
+  justify-content: center;
+}
+html #wrapper #content_cover #cover #cover_content #summary_left_right #summary_right #summary_title, body #wrapper #content_cover #cover #cover_content #summary_left_right #summary_right #summary_title {
+  text-align: center;
+  padding: 0;
+  margin-bottom: 0.5rem;
+}
+html #wrapper #content_cover #cover #cover_content #summary_left_right #summary_right #summary_title h1, body #wrapper #content_cover #cover #cover_content #summary_left_right #summary_right #summary_title h1 {
+  background: linear-gradient(to top, #00AF66, #00AF6688);
+  background: -webkit-linear-gradient(#00AF6655, #00AF66FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Rubik", sans-serif;
+  font-size: 64pt;
+  margin: 0;
+}
+html #wrapper #content_cover #cover #cover_content #summary_left_right #summary_right #summary_subtitle, body #wrapper #content_cover #cover #cover_content #summary_left_right #summary_right #summary_subtitle {
+  text-align: center;
+  padding: 0;
+  margin-bottom: 0.5rem;
+}
+html #wrapper #content_cover #cover #cover_content #summary_left_right #summary_right #summary_subtitle h2, body #wrapper #content_cover #cover #cover_content #summary_left_right #summary_right #summary_subtitle h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 18pt;
+  color: #777777;
+  margin: 0;
+}
+html #wrapper #content_cover #cover #cover_content #summary_text, body #wrapper #content_cover #cover #cover_content #summary_text {
+  color: #000000aa;
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+}
+html #wrapper #content_cover #cover #cover_content #summary_text h1, body #wrapper #content_cover #cover #cover_content #summary_text h1 {
+  font-size: 42pt;
+  background: -webkit-linear-gradient(#00AF6655, #00AF66FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+html #wrapper #content_cover #cover #cover_content #summary_text h2, body #wrapper #content_cover #cover #cover_content #summary_text h2 {
+  font-size: 14pt;
+  color: #777777;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+html #wrapper #content_cover #cover #cover_content .action_buttons, body #wrapper #content_cover #cover #cover_content .action_buttons {
+  font-size: 14pt;
+  text-decoration: none;
+  color: #000000aa;
+}
+@media only screen and (max-width: 1300px) {
+  html #wrapper #content_cover #cover #cover_content .action_buttons a, body #wrapper #content_cover #cover #cover_content .action_buttons a {
+    display: block;
+    padding: 1rem 0;
+    margin: auto;
+  }
+  html #wrapper #content_cover #cover #cover_content .action_buttons .git, body #wrapper #content_cover #cover #cover_content .action_buttons .git {
+    display: none;
+  }
+}
+html #wrapper #content_cover #cover #cover_content .action_buttons a:hover, html #wrapper #content_cover #cover #cover_content .action_buttons a:visited, html #wrapper #content_cover #cover #cover_content .action_buttons a:link, html #wrapper #content_cover #cover #cover_content .action_buttons a:active, body #wrapper #content_cover #cover #cover_content .action_buttons a:hover, body #wrapper #content_cover #cover #cover_content .action_buttons a:visited, body #wrapper #content_cover #cover #cover_content .action_buttons a:link, body #wrapper #content_cover #cover #cover_content .action_buttons a:active {
+  text-decoration: none;
+  color: #00000077;
+}
+html #wrapper #content_cover #cover #cover_content .action_buttons a, body #wrapper #content_cover #cover #cover_content .action_buttons a {
+  margin: 0 10px;
+  color: #00000099;
+  font-family: "Fira Sans", monospace, sans-serif;
+  font-size: 14pt;
+}
+html #wrapper #content_cover #cover #cover_content .action_buttons a:hover, body #wrapper #content_cover #cover #cover_content .action_buttons a:hover {
+  color: grey;
+}
+html #wrapper #content_cover #cover #cover_content .action_buttons .git_link, body #wrapper #content_cover #cover #cover_content .action_buttons .git_link {
+  background-color: #00000011;
+  border-radius: 5px;
+  padding: 10px;
+}
+html #wrapper #content_cover #cover #cover_content .action_buttons .git_link:hover, body #wrapper #content_cover #cover #cover_content .action_buttons .git_link:hover {
+  background-color: #00000099;
+}
+html #wrapper #content_cover #cover #cover_content .action_buttons .git:hover, body #wrapper #content_cover #cover #cover_content .action_buttons .git:hover {
+  color: white;
+  text-shadow: none;
+}
+html #wrapper #content_cover #cover #cover_content .action_buttons .action_link, body #wrapper #content_cover #cover #cover_content .action_buttons .action_link {
+  font-family: "Fira Sans", monospace, sans-serif;
+  font-size: 14pt;
+  border-radius: 5px;
+  padding: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #00AF66;
+  color: #00000099;
+}
+html #wrapper #content_cover #cover #cover_content .action_buttons .action_link:hover, body #wrapper #content_cover #cover #cover_content .action_buttons .action_link:hover {
+  background-color: #00AF66;
+  color: white;
+}
+html #wrapper #content_cover #content, body #wrapper #content_cover #content {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin-top: -5rem;
+}
+html #wrapper #content_cover #content .content_page, body #wrapper #content_cover #content .content_page {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+@media only screen and (max-width: 1300px) {
+  html #wrapper #content_cover #content .content_page, body #wrapper #content_cover #content .content_page {
+    padding: 0 10%;
+  }
+}
+html #wrapper #content_cover #content .content_page .content_block, body #wrapper #content_cover #content .content_page .content_block {
+  display: flex;
+  flex-direction: row;
+}
+html #wrapper #content_cover #content .content_page .content_block .content_img, body #wrapper #content_cover #content .content_page .content_block .content_img {
+  width: 100%;
+  max-width: 20rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  z-index: 1;
+  transition: all 1.5s ease;
+  left: 10rem;
+  position: absolute;
+  opacity: 0;
+}
+@media screen and (max-width: 1600px) {
+  html #wrapper #content_cover #content .content_page .content_block .content_img, body #wrapper #content_cover #content .content_page .content_block .content_img {
+    opacity: 0 !important;
+  }
+}
+html #wrapper #content_cover #content .content_page .content_block .content_img img, body #wrapper #content_cover #content .content_page .content_block .content_img img {
+  transition: all 1s ease;
+}
+html #wrapper #content_cover #content .content_page .content_block .content_img:hover img:hover, body #wrapper #content_cover #content .content_page .content_block .content_img:hover img:hover {
+  transform: translateY(-0.5rem);
+}
+html #wrapper #content_cover #content .content_page .content_block .content_text, body #wrapper #content_cover #content .content_page .content_block .content_text {
+  z-index: 100;
+}
+html #wrapper #content_cover #content .content_page .content_block .content_text code, body #wrapper #content_cover #content .content_page .content_block .content_text code {
+  display: block;
+  width: 100%;
+}
+html #wrapper #content_cover #content .content_page .content_block .content_text .content_text_br, body #wrapper #content_cover #content .content_page .content_block .content_text .content_text_br {
+  height: 5rem;
+}
+html #wrapper #content_cover #content .content_page .content_page_br, body #wrapper #content_cover #content .content_page .content_page_br {
+  height: 5rem;
+}
+@media only screen and (max-width: 1300px) {
+  html #wrapper #content_cover #content .content_page, html #wrapper #content_cover #content .content_page .content_text, body #wrapper #content_cover #content .content_page, body #wrapper #content_cover #content .content_page .content_text {
+    min-width: 80%;
+  }
+}
+html #wrapper #content_cover #content .content_page h1, html #wrapper #content_cover #content .content_page .content_text h1, body #wrapper #content_cover #content .content_page h1, body #wrapper #content_cover #content .content_page .content_text h1 {
+  font-size: 24pt;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  color: #00AF66;
+  padding: 0;
+  margin: 2rem 0;
+  text-transform: lowercase;
+}
+html #wrapper #content_cover #content .content_page h2, html #wrapper #content_cover #content .content_page .content_text h2, body #wrapper #content_cover #content .content_page h2, body #wrapper #content_cover #content .content_page .content_text h2 {
+  font-size: 18pt;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  color: #00000099;
+  padding: 0;
+  margin: 2rem 0 0.2rem 0;
+  text-transform: lowercase;
+}
+html #wrapper #content_cover #content .content_page h2.h2_first, html #wrapper #content_cover #content .content_page .content_text h2.h2_first, body #wrapper #content_cover #content .content_page h2.h2_first, body #wrapper #content_cover #content .content_page .content_text h2.h2_first {
+  margin-top: 0;
+}
+html #wrapper #content_cover #content .content_page code, html #wrapper #content_cover #content .content_page .content_text code, body #wrapper #content_cover #content .content_page code, body #wrapper #content_cover #content .content_page .content_text code {
+  background-color: #00000011;
+  padding: 20px 10px;
+  font-size: 1.1rem;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+}
+html #wrapper #content_cover #content .content_page code .code_header, html #wrapper #content_cover #content .content_page .content_text code .code_header, body #wrapper #content_cover #content .content_page code .code_header, body #wrapper #content_cover #content .content_page .content_text code .code_header {
+  color: #00000055;
+  user-select: none;
+}
+html #wrapper #content_cover #content .content_page img, html #wrapper #content_cover #content .content_page .content_text img, body #wrapper #content_cover #content .content_page img, body #wrapper #content_cover #content .content_page .content_text img {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+}
+html #wrapper #content_cover #content .content_page div > p, html #wrapper #content_cover #content .content_page .content_text div > p, body #wrapper #content_cover #content .content_page div > p, body #wrapper #content_cover #content .content_page .content_text div > p {
+  color: #000000DD;
+  font-size: 14pt;
+  font-weight: 100;
+  line-height: 1.5em;
+}
+html #wrapper #content_cover #content .content_page a, html #wrapper #content_cover #content .content_page .content_text a, body #wrapper #content_cover #content .content_page a, body #wrapper #content_cover #content .content_page .content_text a {
+  text-decoration: none;
+  border-bottom: 1px solid #AAAAAA;
+  color: inherit;
+  transition: border 500ms, color 500ms;
+}
+html #wrapper #content_cover #content .content_page a:hover, html #wrapper #content_cover #content .content_page .content_text a:hover, body #wrapper #content_cover #content .content_page a:hover, body #wrapper #content_cover #content .content_page .content_text a:hover {
+  border-bottom: 1px solid black;
+  color: black;
+}
+html #wrapper #content_cover #content #get_started, body #wrapper #content_cover #content #get_started {
+  padding: 50px 0;
+}
+html #wrapper #content_cover #content #showcase, body #wrapper #content_cover #content #showcase {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  align-self: center;
+  font-size: 16pt;
+  color: #333333;
+  cursor: grab;
+}
+html #wrapper #content_cover #content #showcase .showcase_element, body #wrapper #content_cover #content #showcase .showcase_element {
+  font-family: sans-serif;
+  font-weight: 800;
+  color: #555555;
+  line-height: 1.6rem;
+  justify-content: center;
+  z-index: 1;
+  min-width: 15rem;
+  min-height: 7rem;
+  border: 1px solid #AAAAAA;
+  margin: 1rem 2rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-color: #F9F9F9;
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.1), inset 4px 4px 4px 0 white;
+  transition: transform 250ms, shadow 250ms;
+  position: relative;
+}
+html #wrapper #content_cover #content #showcase .showcase_element:first-child, body #wrapper #content_cover #content #showcase .showcase_element:first-child {
+  margin-left: 30%;
+}
+html #wrapper #content_cover #content #showcase .showcase_element:hover, body #wrapper #content_cover #content #showcase .showcase_element:hover {
+  box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.1), inset 4px 4px 4px 0 rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transform: translate(0, -0.25rem);
+}
+html #wrapper #content_cover #content #showcase .showcase_element h4, body #wrapper #content_cover #content #showcase .showcase_element h4 {
+  font-family: monospace;
+  font-weight: 100;
+  font-size: 12pt;
+  margin: 0;
+  color: #777777;
+}
+html #wrapper #content_cover #content #showcase .showcase_element span.highlight, body #wrapper #content_cover #content #showcase .showcase_element span.highlight {
+  color: #00AF66;
+}
+html #wrapper #content_cover #content #showcase .showcase_element a, body #wrapper #content_cover #content #showcase .showcase_element a {
+  text-decoration: none;
+  use-select: none;
+  -webkit-user-drag: none;
+}
+html #wrapper #content_cover #content #showcase .showcase_element a:hover, html #wrapper #content_cover #content #showcase .showcase_element a:active, html #wrapper #content_cover #content #showcase .showcase_element a:visited, body #wrapper #content_cover #content #showcase .showcase_element a:hover, body #wrapper #content_cover #content #showcase .showcase_element a:active, body #wrapper #content_cover #content #showcase .showcase_element a:visited {
+  color: inherit;
+}
+html #wrapper #content_cover #content #showcase .showcase_element a .clickable, body #wrapper #content_cover #content #showcase .showcase_element a .clickable {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  z-index: 2;
+}
+html #wrapper #content_cover #content #showcase .showcase_element.showcase_element_tbd, body #wrapper #content_cover #content #showcase .showcase_element.showcase_element_tbd {
+  opacity: 0.5;
+}
+@media only screen and (max-width: 1300px) {
+  html #wrapper #content_cover #content #showcase .showcase_element, body #wrapper #content_cover #content #showcase .showcase_element {
+    min-width: 30%;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  html #wrapper #content_cover #content #showcase .showcase_element h4, body #wrapper #content_cover #content #showcase .showcase_element h4 {
+    font-size: 12px;
+    padding-bottom: 1rem;
+  }
+}
+html #wrapper #content_cover #content #showcase::after, body #wrapper #content_cover #content #showcase::after {
+  content: "       ";
+}
+html #wrapper #content_cover #content ::-webkit-scrollbar, body #wrapper #content_cover #content ::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+html #wrapper #content_cover #content #concept, body #wrapper #content_cover #content #concept {
+  perspective: 30px;
+}
+html #wrapper #content_cover #content #concept #cell_render, body #wrapper #content_cover #content #concept #cell_render {
+  transition: transform 1s;
+  -webkit-transition: transform 1s;
+  -moz-transition: transform 1s;
+  -o-transition: transform 1s;
+}
+html #wrapper #content_cover #content .content_page_wide, body #wrapper #content_cover #content .content_page_wide {
+  min-width: 75rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+}
+@media only screen and (max-width: 1300px) {
+  html #wrapper #content_cover #content .content_page_wide, body #wrapper #content_cover #content .content_page_wide {
+    min-width: 0;
+    width: 100%;
+    align-items: center;
+  }
+}
+html #wrapper #content_cover #content .content_page_wide #green_canvas, body #wrapper #content_cover #content .content_page_wide #green_canvas {
+  background: #00AF6633;
+  width: 100%;
+  min-height: 20rem;
+  border-radius: 2rem;
+  padding: 3rem 5rem;
+  margin-bottom: 10rem;
+}
+@media only screen and (max-width: 1300px) {
+  html #wrapper #content_cover #content .content_page_wide #green_canvas, body #wrapper #content_cover #content .content_page_wide #green_canvas {
+    border-radius: 0;
+  }
+}
+html #wrapper #content_cover #content .content_page_wide #green_canvas #canvas_wrapper, body #wrapper #content_cover #content .content_page_wide #green_canvas #canvas_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+html #wrapper #content_cover #content .content_page_wide #green_canvas #canvas_wrapper.canvas_column, body #wrapper #content_cover #content .content_page_wide #green_canvas #canvas_wrapper.canvas_column {
+  flex-direction: column;
+  text-align: left;
+}
+@media only screen and (max-width: 800px) {
+  html #wrapper #content_cover #content .content_page_wide #green_canvas #canvas_wrapper, body #wrapper #content_cover #content .content_page_wide #green_canvas #canvas_wrapper {
+    flex-direction: column;
+  }
+}
+html #wrapper #content_cover #content .content_page_wide #green_canvas div, body #wrapper #content_cover #content .content_page_wide #green_canvas div {
+  color: #00AF66;
+}
+html #wrapper #content_cover #content .content_page_wide #green_canvas div span, body #wrapper #content_cover #content .content_page_wide #green_canvas div span {
+  margin: 0;
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: #006B3E;
+}
+html #wrapper #content_cover #content .content_page_wide #green_canvas div ul, body #wrapper #content_cover #content .content_page_wide #green_canvas div ul {
+  margin: 0.2rem 0 3rem 0;
+  list-style: none;
+  padding: 0;
+}
+html #wrapper #content_cover #content .content_page_wide #green_canvas div ul li, body #wrapper #content_cover #content .content_page_wide #green_canvas div ul li {
+  padding: 0.2rem 0;
+}
+html #wrapper #content_cover #content .content_page_wide #green_canvas div ul a, body #wrapper #content_cover #content .content_page_wide #green_canvas div ul a {
+  text-decoration: none;
+  border-bottom: 1px solid #00AF6688;
+  color: inherit;
+  transition: border 500ms, color 500ms;
+}
+html #wrapper #content_cover #content .content_page_wide #green_canvas div ul a:hover, body #wrapper #content_cover #content .content_page_wide #green_canvas div ul a:hover {
+  border-bottom: 1px solid #006B3E;
+  color: #006B3E;
+}
+html footer, body footer {
+  height: auto;
+  width: 100%;
+  margin-top: 50px;
+  background-color: #DDD;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+html footer #footer_content, body footer #footer_content {
+  padding: 3% 0;
+}
+html footer #footer_content div, body footer #footer_content div {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #777;
+}
+html footer #footer_content div p, body footer #footer_content div p {
+  font-weight: 100;
+  margin: 2px 0;
+}
+html footer #footer_content div a, body footer #footer_content div a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid #AAA;
+  transition: border 500ms, color 500ms;
+}
+html footer #footer_content div a:hover, html footer #footer_content div a:active, body footer #footer_content div a:hover, body footer #footer_content div a:active {
+  color: #555;
+  border-bottom: 1px solid #555;
+}
+
+/*# sourceMappingURL=styles.css.map */
